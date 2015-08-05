@@ -10,7 +10,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    {% if 'liquid_tags.notebook' in PLUGINS %}
+    {% if 'liquid_tags.notebook' in PLUGINS and OVERWRITE_NB_HEADER %}
         {% include 'includes/liquid_tags_nb_header.html' %}
     {% endif %}
 
